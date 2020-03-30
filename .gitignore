@@ -1,0 +1,47 @@
+bin 
+obj
+
+# compiled output
+/SPA-app/blog/dist
+/SPA-app/blog/tmp
+/SPA-app/blog/out-tsc
+# Only exists if Bazel was run
+/SPA-app/blog/bazel-out
+
+# dependencies
+/SPA-app/blog/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/SPA-app/blog/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/SPA-app/blog/.sass-cache
+/SPA-app/blog/connect.lock
+/SPA-app/blog/coverage
+/SPA-app/blog/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/SPA-app/blog/typings
+
+# System Files
+.DS_Store
+Thumbs.db
