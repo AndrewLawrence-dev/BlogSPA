@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Marck+Script&display=swap');
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05em;
+}
+
+h1 {
+  font-family: 'Marck Script', cursive;
+}
+
+.page_heading {
+  margin: 0 auto 25px auto;
+  text-align: center;
+}
+
+.bg_back {
+  background-color: #f1f1f1;
+}
+
+.bg_front {
+  background-color: #f7f3c9;
+}
+
+.post_dates {
+  float: right;
+}
+
+.post_posted_on,
+.post_updated_on {
+  display: block;
+  text-align: right;
+}
+
+.post_updated_on {
+  color: #808080;
+}
+
+.post_updated_on::before {
+  content: 'u: ';
+}

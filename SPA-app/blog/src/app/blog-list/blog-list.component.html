@@ -1,0 +1,23 @@
+<div *ngIf="issue_getting_blogs" class="row">
+  <div class="alert alert-danger issue_loading_message col-lg-3">
+    A problem is preventing posts from loading.
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page_heading">{{title}} ({{getBlogsCount()}})</h1>
+  </div>
+</div>
+
+<div *ngIf="!haveBlogsToDisplay()" class="row">
+  <div class="no_blogs col-lg-6 offset-lg-6">
+    {{getNoBlogsToDisplayMessage()}}
+  </div>
+</div>
+
+<div *ngFor="let blog of blogs" class="row blog_row">
+  <div class="blog_entry bg_back col-lg-8 offset-lg-2">
+    <app-blog-detail [blog]="blog"></app-blog-detail>
+  </div>
+</div>

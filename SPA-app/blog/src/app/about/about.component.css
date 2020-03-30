@@ -1,0 +1,56 @@
+.about_entry {
+  padding: 10px;
+}
+
+.software_used_listing {
+  margin: 0;
+}
+
+.software_used_entry {
+  padding: 3px;
+  overflow: hidden;
+}
+
+.softare_used_group {
+  background-color: #ebebeb !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.software_name {
+  background-color: #cccccc;
+  font-size: 1.15em;
+  height: 76px;
+  overflow: hidden;
+  padding: 5px 10px 10px 10px;
+  text-align: center;
+}
+
+.software_logo_img {
+  display: block;
+  height: 75px;
+  margin: 10px auto 0px auto;
+  padding: 5px;
+}
+
+.software_used_for {
+  background-color: #e7e7e7;
+  height: 85px;
+  text-align: center;
+}
+
+.software_version {
+  background-color: #d6d6d6;
+  height: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.software_version_pre {
+  font-size: 0.8em;
+  left: 5px;
+  position: absolute;
+  top: 3px;
+}

@@ -1,0 +1,20 @@
+.blog_row {
+  margin: 0 auto 25px auto;
+}
+
+.no_blogs {
+  border: 1px solid #ccc;
+  margin: 25px auto 25px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.issue_loading_message {
+  border-radius: 0;
+  padding: 2px;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 12px;
+  z-index: 1;
+}

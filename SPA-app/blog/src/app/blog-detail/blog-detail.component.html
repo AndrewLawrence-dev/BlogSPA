@@ -1,0 +1,21 @@
+<div id="blog_{{blog.id}}">
+  <div class="blog_header">
+    <div class="blog_dates">
+      <div class="blog_created">{{blog.created | date}}</div>
+      <!--<div *ngIf="blog.hasBeenModified()" class="blog_last_modified">Updated: {{blog.last_modified | date}}</div>-->
+    </div>
+    <div class="blog_author">{{blog.author.displayName}}</div>
+    <div style="clear:both;"></div>
+  </div>
+  <div class="blog_title">
+    {{blog.title}}
+  </div>
+  <div class="blog_body">
+    <div class="blog_content bg_front" [innerHtml]="blog.content"></div>
+  </div>
+  <div class="blog_footer">
+    <span *ngFor="let topic of blog.topics; last as last" class="blog_topic">
+      {{(!last) ? topic.name + ',' : topic.name}}
+    </span>
+  </div>
+</div>

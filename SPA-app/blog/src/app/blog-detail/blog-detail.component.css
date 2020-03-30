@@ -1,0 +1,29 @@
+.blog_author {
+  float: right;
+  margin: 0 auto 15px auto;
+  padding: 5px;
+}
+
+.blog_content {
+  margin: 15px auto 55px auto;
+  padding: 15px;
+  width: 90%;
+}
+
+.blog_body {
+  clear: both;
+}
+
+.blog_footer {
+  padding: 10px;
+}
+
+.blog_title {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px;
+}
+
+.blog_topic {
+  color: #4c825c;
+}

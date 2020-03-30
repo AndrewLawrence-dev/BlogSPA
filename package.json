@@ -1,0 +1,9 @@
+{
+  "name": "blog-spa",
+  "version": "0.0.0",
+  "description": "BlogSPA",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
