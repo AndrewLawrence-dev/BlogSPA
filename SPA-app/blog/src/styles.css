@@ -39,3 +39,9 @@ body {
 .post_updated_on::before {
   content: 'u: ';
 }
+
+.post_author {
+  float: left;
+  margin: 0 auto 15px auto;
+  padding: 5px;
+}

@@ -1,10 +1,10 @@
-<div id="blog_{{blog.id}}">
+<div id="blog_id__{{blog.id}}">
   <div class="blog_header">
-    <div class="blog_dates">
-      <div class="blog_created">{{blog.created | date}}</div>
-      <!--<div *ngIf="blog.hasBeenModified()" class="blog_last_modified">Updated: {{blog.last_modified | date}}</div>-->
+    <div class="post_author">{{blog.author.displayName}}</div>
+    <div class="post_dates">
+      <div class="post_posted_on">{{blog.created | date}}</div>
+      <div *ngIf="blog.lastModified" class="post_updated_on">{{blog.lastModified | date}}</div>
     </div>
-    <div class="blog_author">{{blog.author.displayName}}</div>
     <div style="clear:both;"></div>
   </div>
   <div class="blog_title">

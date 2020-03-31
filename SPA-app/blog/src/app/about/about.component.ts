@@ -23,10 +23,11 @@ export class AboutComponent implements OnInit {
     this.createTech('Angular', '8.2.14', 'Front -End', 'angular-icon.svg');
     this.createTech('ASP.NET Core Web API', '3.1', 'Back-End', 'aspnetcore-logo.png');
     this.createTech('Entity Framework Core', '3.1.3', 'Data Access Interface', 'entity_framework_logo.png');
-    this.createTech('Microsoft SQL Server', '17.9.1', 'Database Server', 'Sql_server_logo.png');
+    this.createTech('Microsoft SQL Server Express', '17.9.1', 'Database Server', 'Sql_server_logo.png');
     this.createTech('Bootstrap', '4.4.1', 'CSS', 'bootstrap-logo.png');
     this.createTech('Visual Studio Community', '2019', 'IDE (Integrated Development Environment)', 'VisualStudio2019_logo.svg');
     this.createTech('Angular CLI', '8.3.25', 'Command-line development tool for Angular', 'angular_cli_logo.png');
+    this.createTech('Postman', '7.21.1', 'Web API HTTP Request Testing', 'postman-icon.png');
   }
 
   private createTech(name: string, version: string, used_for: string, img_file: string) {
