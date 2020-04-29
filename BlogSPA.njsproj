@@ -14177,9 +14177,12 @@
     <Content Include="SPA-app\blog\src\app\blog-topics\blog-topics.component.html" />
     <Content Include="SPA-app\blog\src\app\contact\contact.component.css" />
     <Content Include="SPA-app\blog\src\app\contact\contact.component.html" />
+    <Content Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.css" />
+    <Content Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.html" />
     <Content Include="SPA-app\blog\src\app\nav\nav.component.css" />
     <Content Include="SPA-app\blog\src\app\nav\nav.component.html" />
     <Content Include="SPA-app\blog\src\assets\.gitkeep" />
+    <Content Include="SPA-app\blog\src\assets\html_editor\tinymce.min.js" />
     <Content Include="SPA-app\blog\src\assets\images\angular-icon.svg" />
     <Content Include="SPA-app\blog\src\assets\images\aspnetcore-logo.png" />
     <Content Include="SPA-app\blog\src\assets\images\Sql_server_logo.png" />
@@ -16547,14 +16550,17 @@
     <Folder Include="SPA-app\blog\src\app\blog-list\" />
     <Folder Include="SPA-app\blog\src\app\blog-topics\" />
     <Folder Include="SPA-app\blog\src\app\contact\" />
+    <Folder Include="SPA-app\blog\src\app\create-blog-post\" />
     <Folder Include="SPA-app\blog\src\app\nav\" />
     <Folder Include="SPA-app\blog\src\app\routing\" />
     <Folder Include="SPA-app\blog\src\assets\" />
     <Folder Include="SPA-app\blog\src\assets\images\" />
+    <Folder Include="SPA-app\blog\src\assets\html_editor\" />
     <Folder Include="SPA-app\blog\src\environments\" />
     <Folder Include="SPA-app\blog\src\Models\" />
     <Folder Include="SPA-app\blog\src\Models\Managers\" />
     <Folder Include="SPA-app\blog\src\Models\Managers\Time\" />
+    <Folder Include="SPA-app\blog\src\services\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="SPA-app\blog\node_modules\hash.js\lib\hash.d.ts" />
@@ -18621,6 +18627,8 @@
     <TypeScriptCompile Include="SPA-app\blog\src\app\blog-topics\blog-topics.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\contact\contact.component.spec.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\contact\contact.component.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.spec.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\nav\nav.component.spec.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\nav\nav.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\routing\routes.ts" />
@@ -18633,6 +18641,8 @@
     <TypeScriptCompile Include="SPA-app\blog\src\Models\Managers\Time\time_manager.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\Models\topic.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\polyfills.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\services\alert.service.spec.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\services\alert.service.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\test.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

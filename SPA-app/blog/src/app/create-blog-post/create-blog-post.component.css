@@ -1,0 +1,17 @@
+#editor_section {
+    margin: 35px auto;
+}
+
+#save_post_btn {
+    display: block;
+    margin: 15px auto;
+}
+
+.post_title_lbl {
+    margin-right: 15px;
+}
+
+input[name="post_title"] {
+    text-align: center;
+    width: 50%;
+}

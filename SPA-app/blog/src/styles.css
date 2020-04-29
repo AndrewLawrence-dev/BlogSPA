@@ -3,14 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Marck+Script|Playfair+Display&display=swap');
 
 body {
-  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.05em;
+}
+
+nav {
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .page_heading {
   font-family: 'Playfair Display', serif;
   font-size: 1.7em;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 50px auto;
   text-align: center;
 }
 
@@ -19,11 +22,12 @@ body {
 }
 
 .bg_front {
-  background-color: #f5f3db;
+  background-color: #dbdbdb;
 }
 
 .post_dates {
   float: right;
+  padding-top: 2px;
 }
 
 .post_posted_on,
@@ -34,6 +38,7 @@ body {
 
 .post_updated_on {
   color: #808080;
+  margin-top: -5px;
 }
 
 .post_updated_on::before {
@@ -44,4 +49,21 @@ body {
   float: left;
   margin: 0 auto 15px auto;
   padding: 5px;
+}
+
+.alert_msg_success,
+.alert_msg_failure {
+  color: #fff;
+  margin-right: 25px;
+  padding: 5px 20px;
+  position: absolute;
+  right: 0;
+}
+
+.alert_msg_failure {
+  background: #824343;
+}
+
+.alert_msg_success {
+  background: #438243;
 }

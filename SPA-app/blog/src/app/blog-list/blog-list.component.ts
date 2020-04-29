@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BlogPost } from '../../Models/blogPost';
-import { Author } from '../../Models/author';
-import { Topic } from '../../Models/topic';
+import { HttpClient }        from '@angular/common/http';
+
+import { BlogPost }     from '../../Models/blogPost';
+import { AlertService } from '../../services/alert.service';
 
 @Component({
   selector: 'app-blog-list',
@@ -11,11 +11,9 @@ import { Topic } from '../../Models/topic';
 })
 export class BlogListComponent implements OnInit {
   public title               : string = 'Posts';
-
   private blogs              : BlogPost[];
-  private issue_getting_blogs: boolean = false;
 
-  constructor(private http_client: HttpClient) { }
+  constructor(private http_client: HttpClient, private alert_service: AlertService) { }
 
   ngOnInit() {
     this.loadBlogs();
@@ -25,9 +23,10 @@ export class BlogListComponent implements OnInit {
 
     this.http_client.get("http://localhost:62568/api/posts").subscribe((response: BlogPost[]) => {
       this.blogs = response;
+      this.alert_service.success('Got em');
     },
     (error) => {
-      this.issue_getting_blogs = true;
+      this.alert_service.failure('Unable to load blog posts.');
     });
   }
 
