@@ -11,6 +11,25 @@
   </div>
 </div>
 
+<div *ngIf="have_topics_left_to_select()" class="row">
+  <div class="col-lg-12 text-center">
+    <label class="post_topics_lbl">Topics: </label>
+    <select id="blog_topics_dd" (change)="add_topic_to_selected_remove_from_master($event.target.value)">
+      <option value=""></option>
+      <option *ngFor="let topic of topics_master" [value]="topic.id">{{topic.name}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <span *ngFor="let topic of this_posts_topics" class="selected_blog_topic">
+      {{topic.name}}
+      <span class="btn btn-xs btn-danger remove_topic_btn" (click)="remove_topic_from_selected_add_to_master(topic.id)">x</span>
+    </span>
+  </div>
+</div>
+
 <div id="editor_section" class="row">
   <div class="col-lg-8 offset-lg-2">
     <form (submit)="save_post($event)" method="post">
