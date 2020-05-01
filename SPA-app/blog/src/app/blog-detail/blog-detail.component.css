@@ -25,3 +25,8 @@
 .blog_header {
   font-family: "Barlow Condensed", sans-serif
 }
+
+.post_timezone {
+  color: #464646;
+  font-size: 0.8em;
+}

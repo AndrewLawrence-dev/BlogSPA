@@ -2,7 +2,7 @@
   <div class="blog_header">
     <div class="post_author" title="{{'Written by: ' + blog.author.displayName}}">{{blog.author.displayName}}</div>
     <div class="post_dates">
-      <div class="post_posted_on" title="{{'Created: ' + blog.created}}">{{blog.created | date}}</div>
+      <div class="post_posted_on" title="{{'Created: ' + blog.created}}">{{blog.created | date}} - <span class="post_timezone">{{blog.timezone}}</span></div>
       <div *ngIf="blog.lastModified" class="post_updated_on" title="{{'Last updated: ' + blog.lastModified}}">{{blog.lastModified | date}}</div>
     </div>
     <div style="clear:both;"></div>

@@ -26,7 +26,7 @@ export class BlogListComponent implements OnInit {
       this.alert_service.success('Got em');
     },
     (error) => {
-      this.alert_service.failure('Unable to load blog posts.');
+      this.alert_service.failure('Unable to load blog posts');
     });
   }
 

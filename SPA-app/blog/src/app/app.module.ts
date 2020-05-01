@@ -7,15 +7,17 @@ import {
   ReactiveFormsModule
 }                           from '@angular/forms';
 
-import { AppComponent }        from './app.component';
-import { BlogListComponent }   from './blog-list/blog-list.component';
-import { BlogDetailComponent } from './blog-detail/blog-detail.component';
-import { BlogTopicsComponent } from './blog-topics/blog-topics.component';
-import { ContactComponent }    from './contact/contact.component';
-import { AboutComponent }      from './about/about.component';
-import { NavComponent }        from './nav/nav.component';
-import { appRoutes }           from './routing/routes';
+import { AppComponent }            from './app.component';
+import { BlogListComponent }       from './blog-list/blog-list.component';
+import { BlogDetailComponent }     from './blog-detail/blog-detail.component';
+import { BlogTopicsComponent }     from './blog-topics/blog-topics.component';
+import { ContactComponent }        from './contact/contact.component';
+import { AboutComponent }          from './about/about.component';
+import { NavComponent }            from './nav/nav.component';
+import { appRoutes }               from './routing/routes';
 import { CreateBlogPostComponent } from './create-blog-post/create-blog-post.component';
+import { InterviewsComponent }     from './interviews/interviews.component';
+import { PortfolioComponent }      from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CreateBlogPostComponent } from './create-blog-post/create-blog-post.com
     ContactComponent,
     AboutComponent,
     NavComponent,
-    CreateBlogPostComponent
+    CreateBlogPostComponent,
+    InterviewsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

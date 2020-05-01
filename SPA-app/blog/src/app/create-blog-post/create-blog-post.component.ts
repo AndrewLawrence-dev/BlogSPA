@@ -68,6 +68,7 @@ export class CreateBlogPostComponent implements OnInit {
       console.log(response);
     }, (error) => {
         this.alert_service.failure('Unable to create post. ' + error);
+        console.log(error);
     });
   }
 

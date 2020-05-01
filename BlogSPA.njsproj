@@ -14179,8 +14179,12 @@
     <Content Include="SPA-app\blog\src\app\contact\contact.component.html" />
     <Content Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.css" />
     <Content Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.html" />
+    <Content Include="SPA-app\blog\src\app\interviews\interviews.component.css" />
+    <Content Include="SPA-app\blog\src\app\interviews\interviews.component.html" />
     <Content Include="SPA-app\blog\src\app\nav\nav.component.css" />
     <Content Include="SPA-app\blog\src\app\nav\nav.component.html" />
+    <Content Include="SPA-app\blog\src\app\portfolio\portfolio.component.css" />
+    <Content Include="SPA-app\blog\src\app\portfolio\portfolio.component.html" />
     <Content Include="SPA-app\blog\src\assets\.gitkeep" />
     <Content Include="SPA-app\blog\src\assets\html_editor\tinymce.min.js" />
     <Content Include="SPA-app\blog\src\assets\images\angular-icon.svg" />
@@ -16551,7 +16555,9 @@
     <Folder Include="SPA-app\blog\src\app\blog-topics\" />
     <Folder Include="SPA-app\blog\src\app\contact\" />
     <Folder Include="SPA-app\blog\src\app\create-blog-post\" />
+    <Folder Include="SPA-app\blog\src\app\interviews\" />
     <Folder Include="SPA-app\blog\src\app\nav\" />
+    <Folder Include="SPA-app\blog\src\app\portfolio\" />
     <Folder Include="SPA-app\blog\src\app\routing\" />
     <Folder Include="SPA-app\blog\src\assets\" />
     <Folder Include="SPA-app\blog\src\assets\images\" />
@@ -18629,8 +18635,12 @@
     <TypeScriptCompile Include="SPA-app\blog\src\app\contact\contact.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.spec.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\create-blog-post\create-blog-post.component.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\interviews\interviews.component.spec.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\interviews\interviews.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\nav\nav.component.spec.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\nav\nav.component.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\portfolio\portfolio.component.spec.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\app\portfolio\portfolio.component.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\app\routing\routes.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\environments\environment.ts" />

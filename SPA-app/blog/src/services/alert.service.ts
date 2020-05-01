@@ -28,9 +28,9 @@ export class AlertService {
   }
 
   private showAlert(message: string, alert_class: string) {
-    const alert_node      = document.createElement('div');
-    let alert_text_node   = document.createTextNode(message);
-    const nav_elm         = document.querySelector('nav');
+    const alert_node    = document.createElement('div');
+    let alert_text_node = document.createTextNode(message);
+    const nav_elm       = document.querySelector('nav');
 
     alert_node.id        = this.getAlertMessageID();
     alert_node.className = alert_class;
@@ -38,7 +38,7 @@ export class AlertService {
 
     nav_elm.appendChild(alert_node);
 
-    let appear_for_seconds = 5;
+    let appear_for_seconds = 10;
 
     const alert_interval = setInterval(function (appear_for_seconds_countdown) {
       return function () {
