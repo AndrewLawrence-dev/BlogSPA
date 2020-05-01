@@ -3,3 +3,85 @@
     <h1 class="page_heading">Interviews</h1>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="row interview_entry_section interview_entry_section_alt">
+    <div class="interview_entry col-lg-8 offset-lg-2">
+      <h2 class="interview_heading">How would you diagnose/fix a front-end performance problem?</h2>
+      <p>
+        The first step is to determine whether the problem really is a front-end problem. It may be a back-end issue. I would generate a performance profile of the
+        application (using the 'Performance' tab, for example, in Chrome Developer Tools) and check the Network requests to see if any network requests are being made,
+        how long each takes to get a response, the datasize of the request, etc... If a request is taking a long time to complete, there's a problem with the back-end
+        or with whatever server(s) the network call is being made to.
+      </p>
+      <p>
+        If there aren't any requests that are taking a long time, we then need to isolate the problem within the front-end code base. You can continue to drill into
+        the performance profile while looking for any events that are triggered before/after the noticeable performance problem. This will help locate the source of
+        the issue. Loops, DOM manipulations, rendering, etc... are common places of performance issues. You can use "performance.now()".
+      </p>
+      <p>
+        I would also consider using "performance.now()" statements around sections of code to further track the run-time of an operation(s).
+      </p>
+    </div>
+  </div>
+
+  <div class="row interview_entry_section">
+    <div class="interview_entry col-lg-8 offset-lg-2">
+      <h2 class="interview_heading">How do you resolve customer issues?</h2>
+      <p>
+        The most important thing is to get a good understanding of what they expect to see and what they actually see. We must start out on the same page having the same
+        understanding of what the issue is (and isn't).
+      </p>
+      <p>
+        If it's a coding issue, I would start by getting as much information about the issue as I can (such as error messages, what
+        they were doing when the issue occurred, etc...). I would then examine any logs to see if an error (exception) has been logged in the database.
+      </p>
+      <p>
+        For more general issues, it's important to let the customer know that you're committed to seeing the issue through and that you're not looking for a quick fix to relieve yourself.
+        I would assure them that I will look into the issue and that they are free to contact me with any information that they may find.
+      </p>
+    </div>
+  </div>
+
+  <div class="row interview_entry_section interview_entry_section_alt">
+    <div class="interview_entry col-lg-8 offset-lg-2">
+      <h2 class="interview_heading">How do you handle errors on the server (back-end)?</h2>
+      <p>
+        I would make sure exception handling is implemented using 'try-catch' blocks. I would also make sure that errors are being logged in plain English with detailed
+        information. If an error occurs, the user must be informed in plain English as well.
+      </p>
+    </div>
+  </div>
+
+  <div class="row interview_entry_section">
+    <div class="interview_entry col-lg-8 offset-lg-2">
+      <h2 class="interview_heading">My Background</h2>
+      <p>
+        My software development career kicked off after completing a 3 month bootcamp that taught ASP.NET MVC, C#, JavaScript, and SQL. I had previous experience with
+        those languages/frameworks but I was able to make large improvements through the bootcamp.
+      </p>
+      <p>
+        I started my first long-term software development job as a web developer for <a href="https://www.wingweb.com/" target="_blank">WingWeb Consulting</a>. I worked with the owner of the company.
+        I spent most of my time there working for a mobile phone repair company. I was in control of all aspects of their development (consulting, front-end, back-end, support, etc...).
+        We had to build and maintain a ticketing system for sixty-thousand phones.
+      </p>
+      <p>
+        After WingWeb, I ventured out of the C#/.NET/T-SQL world in the PHP/WordPress/MySQL world. I've spent the last 2 years working for a Warehousing/Package Fullfilment
+        company (PPS). For PPS, I am responsible for the entire codebase. I communicate directly with the business owner to help him get what he really needs (not necessarily
+        only what he asks for). I oversee his website that he uses as an internal eCommerce site to track inventory and orders.
+      </p>
+      <p>
+        I am now returning to the C#/.NET world. Venturing out taught me new perspectives and possibilities for solving problems. I learned to use a different language (PHP)
+        with different tools (Visual Studio vs Visual Studio Code). I enjoyed learning different site architectures (WordPress' hooks (actions/filters) vs ASP.NET MVC (controllers/models/views)).
+        I gained a real appreciation for detailed documentation and testing while working with PPS which encouraged me to focus more on documentation and testing in all of my work.
+      </p>
+      <p>
+        I've worked independently for most of my career and I've felt the joys and pains of that. I am more interested in team work now that I've experienced
+        a good deal of independent development though I'm comfortable working independently. I also really value the relationships built with the business owners and their
+        highly ranked staff that are responsible for project direction/decisions. I'm looking to be a part of a great team that strives to write good code that serves the
+        client/users well.
+      </p>
+    </div>
+  </div>
+</div>
+

@@ -23,7 +23,6 @@ export class BlogListComponent implements OnInit {
 
     this.http_client.get("http://localhost:62568/api/posts").subscribe((response: BlogPost[]) => {
       this.blogs = response;
-      this.alert_service.success('Got em');
     },
     (error) => {
       this.alert_service.failure('Unable to load blog posts');
