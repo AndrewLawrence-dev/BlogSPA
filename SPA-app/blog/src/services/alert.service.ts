@@ -15,6 +15,14 @@ export class AlertService {
     this.showAlert(message, this.getFailureAlertClass());
   }
 
+  successfulPostCreation() {
+    this.showAlert('Created New Post', this.getSuccessAlertClass());
+  }
+
+  failurePostCreation() {
+    this.showAlert('Unable To Create Post', this.getFailureAlertClass());
+  }
+
   private getAlertMessageID() {
     return 'alert_msg';
   }

@@ -4,6 +4,7 @@ import { HttpClient }        from '@angular/common/http';
 import * as tmce             from '../../assets/html_editor/tinymce.min.js';
 import { AlertService }      from '../../services/alert.service.js';
 import { Topic }             from '../../Models/topic.js';
+import { RouterService }     from '../../services/router/router.service.js';
 
 @Component({
   selector: 'app-create-blog-post',
@@ -11,14 +12,19 @@ import { Topic }             from '../../Models/topic.js';
   styleUrls: ['./create-blog-post.component.css']
 })
 export class CreateBlogPostComponent implements OnInit {
-  public title: string           = 'Create Post';
-  public html_editor_id: string  = 'html_editor';
-  public post_title    : string  = '';
-  public html_editor: any        = tmce;
-  public topics_master: {}[]     = [];
-  public this_posts_topics: {}[] = [];
+  public title             : string  = 'Create Post';
+  public html_editor_id    : string  = 'html_editor';
+  public post_title        : string  = '';
+  public html_editor       : any     = tmce;
+  public topics_master     : {}[]    = [];
+  public this_posts_topics : {}[]    = [];
+  private save_btn         : {}      = {
+    enabled: true
+  };
 
-  constructor(private http_client: HttpClient, private alert_service: AlertService) { }
+  constructor(private http_client    : HttpClient,
+              private alert_service  : AlertService,
+              private router_service : RouterService) { }
 
   ngOnInit() {
     this.load_blog_topics();
@@ -58,16 +64,25 @@ export class CreateBlogPostComponent implements OnInit {
 
     const blog_content = this.html_editor_get_post_content();
 
+    this.disable_save_btn();
+
     this.http_client.post("http://localhost:62568/api/posts", {
       'Title'  : this.post_title,
       'Content': blog_content,
       'Topics' : this.this_posts_topics
     })
-    .subscribe((response: any) => {
-      this.alert_service.success('Created');
-    }, (error) => {
-        this.alert_service.failure('Unable to create post. ' + error);
-    });
+    .subscribe(
+      (response: any) => {
+        this.alert_service.successfulPostCreation();
+        this.router_service.sendUserToMainPostListing();
+      },
+      () => {
+        this.alert_service.failurePostCreation();
+      },
+      () => {
+        this.enable_save_btn();
+      }
+    );
   }
 
   load_blog_topics() {
@@ -144,5 +159,13 @@ export class CreateBlogPostComponent implements OnInit {
 
       return 0;
     });
+  }
+
+  disable_save_btn() {
+    this.save_btn['enabled'] = false;
+  }
+
+  enable_save_btn() {
+    this.save_btn['enabled'] = true;
   }
 }

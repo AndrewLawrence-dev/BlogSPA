@@ -14,12 +14,14 @@
 
 .blog_title {
   text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.4em;
   padding: 5px;
 }
 
 .blog_topic {
   color: #4c825c;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .blog_header {

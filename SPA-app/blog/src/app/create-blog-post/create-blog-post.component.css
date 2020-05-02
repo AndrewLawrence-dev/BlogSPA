@@ -18,8 +18,8 @@ input[name="post_title"] {
 }
 
 .remove_topic_btn {
-  position: absolute;
-  right: 2px;
+  float: right;
+  margin: 4px -5px 0 8px;
 }
 
 #blog_topics_dd {

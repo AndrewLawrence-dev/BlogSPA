@@ -16567,6 +16567,7 @@
     <Folder Include="SPA-app\blog\src\Models\Managers\" />
     <Folder Include="SPA-app\blog\src\Models\Managers\Time\" />
     <Folder Include="SPA-app\blog\src\services\" />
+    <Folder Include="SPA-app\blog\src\services\router\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="SPA-app\blog\node_modules\hash.js\lib\hash.d.ts" />
@@ -18653,6 +18654,8 @@
     <TypeScriptCompile Include="SPA-app\blog\src\polyfills.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\services\alert.service.spec.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\services\alert.service.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\services\router\router.service.spec.ts" />
+    <TypeScriptCompile Include="SPA-app\blog\src\services\router\router.service.ts" />
     <TypeScriptCompile Include="SPA-app\blog\src\test.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
